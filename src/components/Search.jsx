@@ -26,7 +26,7 @@ const Search = ({ onSearch }) => {
         <input
           id="searchAfl"
           type="text"
-          placeholder="Search AFL"
+          placeholder="Search"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           className="w-full border border-gray-300 rounded-full px-4 py-3 text-base text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200"
