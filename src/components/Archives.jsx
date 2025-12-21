@@ -9,25 +9,25 @@ const Archives = () => {
       id: "vol_14",
       title: "Vol. 14 (2025)",
       published: "2025-02-02",
-      img: "/vol.jpg", // replace with real image path
+      // replace with real image path
     },
     {
       id: "vol_13",
       title: "Vol. 13 (2024)",
       published: "2024-05-31",
-      img: "/vol.jpg",
+      
     },
     {
       id: "vol_12",
       title: "Vol. 12 (2023)",
       published: "2023-07-14",
-      img: "/vol.jpg",
+      
     },
     {
       id: "vol_11",
       title: "Vol. 11 (2022)",
       published: "2022-03-05",
-      img: "/vol.jpg",
+      
     },
   ];
 
