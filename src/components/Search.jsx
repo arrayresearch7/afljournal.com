@@ -48,12 +48,7 @@ const Search = ({ onSearch }) => {
         <p className="mt-3"></p>
 
         
-      </div>
-
-      {/* Logo Images */}
-      <div className="p-4 border-t border-gray-200">
-        <img src= className="w-full h-auto object-contain" />
-      </div>
+      
       <div className="p-4 border-t border-gray-200">
         <a href="https://abdc.edu.au/abdc-journal-quality-list/" target="_blank" rel="noopener noreferrer">
           <img src="/Logo-1.svg" alt="ABDC Journal Quality List" className="w-full h-auto object-contain" />
