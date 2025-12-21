@@ -10,11 +10,12 @@ const Search = ({ onSearch }) => {
   };
 
   return (
-    <div className="bg-white rounded-xl shadow-md overflow-hidden">
+    <div className="rounded-xl overflow-hidden bg-[#122d23] border border-gray-700 shadow-xl">
+      
       {/* Make a Submission Button */}
-      <div className="p-4">
+      <div className="p-5 border-b border-gray-700">
         <button
-          className="w-full inline-flex justify-center items-center rounded-full px-4 py-3 text-base font-bold bg-yellow-500 hover:bg-yellow-600 active:bg-yellow-700 text-gray-900 transition-all duration-200 ease-in-out transform hover:scale-105"
+          className="w-full inline-flex justify-center items-center rounded-full px-4 py-3 text-base font-bold bg-[#d4af37] hover:bg-[#c9a635] active:bg-[#bfa12f] text-[#0b1f17] transition-all duration-200 ease-in-out transform hover:scale-[1.02]"
           onClick={() => navigate('/submissions')}
         >
           Make a Submission
@@ -22,18 +23,18 @@ const Search = ({ onSearch }) => {
       </div>
 
       {/* Search Input */}
-      <div className="p-4 border-t border-gray-200">
+      <div className="p-5 border-b border-gray-700">
         <input
           id="searchAfl"
           type="text"
           placeholder="Search Journal"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          className="w-full border border-gray-300 rounded-full px-4 py-3 text-base text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200"
+          className="w-full rounded-full px-4 py-3 text-base bg-[#0b1f17] text-gray-200 placeholder-gray-400 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-[#d4af37] transition-all duration-200"
         />
         <button
           type="button"
-          className="w-full mt-3 inline-flex justify-center items-center rounded-full px-4 py-3 text-base font-bold bg-purple-700 hover:bg-purple-800 active:bg-purple-900 text-white transition-all duration-200 ease-in-out transform hover:scale-105"
+          className="w-full mt-4 inline-flex justify-center items-center rounded-full px-4 py-3 text-base font-semibold bg-[#1f3a2e] hover:bg-[#254b3a] active:bg-[#2a5a45] text-gray-100 transition-all duration-200 ease-in-out transform hover:scale-[1.02]"
           onClick={handleSearch}
         >
           Search
@@ -41,8 +42,8 @@ const Search = ({ onSearch }) => {
       </div>
 
       {/* Journal Info */}
-      <div className="p-4 border-t border-gray-200 text-sm text-gray-700">
-        <p className="font-bold text-base text-purple-900 mb-2">
+      <div className="p-5 border-b border-gray-700 text-sm text-gray-300">
+        <p className="font-semibold text-base text-[#d4af37] mb-2">
           Applied Finance Letters
         </p>
         <p className="mt-1">Print ISSN: 2253-5799</p>
@@ -50,7 +51,7 @@ const Search = ({ onSearch }) => {
       </div>
 
       {/* ABDC Logo */}
-      <div className="p-4 border-t border-gray-200">
+      <div className="p-5">
         <a
           href="https://abdc.edu.au/abdc-journal-quality-list/"
           target="_blank"
@@ -59,7 +60,7 @@ const Search = ({ onSearch }) => {
           <img
             src="/Logo-1.svg"
             alt="ABDC Journal Quality List"
-            className="w-full h-auto object-contain"
+            className="w-full h-auto object-contain opacity-90 hover:opacity-100 transition-opacity duration-200"
           />
         </a>
       </div>
