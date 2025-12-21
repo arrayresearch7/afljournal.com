@@ -24,7 +24,7 @@ const Home = () => {
                   Applied Finance-Letters
                 </h1>
                 <p className="mt-6 max-w-3xl text-base sm:text-lg leading-relaxed text-gray-300">
-                  Applied Finance Letters is an open-access journal publishing mainly empirical research with implications and relevance for academia and the finance industry. The aim is to encourage high-quality contributions that foster discussions among academics, policymakers, and financial practitioners. The Journal welcomes submissions from all fields of finance and is especially interested in innovative and original contributions. Applied Finance Letters is B-ranked on the 2022 ABDC Journal Ranking List, is indexed by EconLit and DOAJ, and has a self-computed 2023 Impact Factor of 0.72.
+                  This journal is an independent academic platform created to support the dissemination of research and scholarly discussion in finance, economics, and related interdisciplinary areas. The journal aims to provide a neutral space for researchers, educators, and professionals to share original ideas and analytical insights. The platform operates independently and does not represent or claim affiliation with any university, institution, or existing academic journal.
                 </p>
               </div>
 
