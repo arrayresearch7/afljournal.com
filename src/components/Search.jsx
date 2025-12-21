@@ -26,7 +26,7 @@ const Search = ({ onSearch }) => {
         <input
           id="searchAfl"
           type="text"
-          placeholder="Search"
+          placeholder="Search Journal"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           className="w-full border border-gray-300 rounded-full px-4 py-3 text-base text-gray-700 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-200"
@@ -42,16 +42,25 @@ const Search = ({ onSearch }) => {
 
       {/* Journal Info */}
       <div className="p-4 border-t border-gray-200 text-sm text-gray-700">
-        <p className="font-bold text-base text-purple-900 mb-2">Applied Finance Letters</p>
+        <p className="font-bold text-base text-purple-900 mb-2">
+          Applied Finance Letters
+        </p>
         <p className="mt-1">Print ISSN: 2253-5799</p>
         <p>Online ISSN: 2253-5802</p>
-        <p className="mt-3"></p>
+      </div>
 
-        
-      
+      {/* ABDC Logo */}
       <div className="p-4 border-t border-gray-200">
-        <a href="https://abdc.edu.au/abdc-journal-quality-list/" target="_blank" rel="noopener noreferrer">
-          <img src="/Logo-1.svg" alt="ABDC Journal Quality List" className="w-full h-auto object-contain" />
+        <a
+          href="https://abdc.edu.au/abdc-journal-quality-list/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/Logo-1.svg"
+            alt="ABDC Journal Quality List"
+            className="w-full h-auto object-contain"
+          />
         </a>
       </div>
     </div>
