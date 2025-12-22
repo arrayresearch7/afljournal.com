@@ -22,19 +22,19 @@ const Header = () => {
   const isAboutActive = aboutRoutes.includes(location.pathname);
 
   return (
-    <header className="bg-[#0b1f17] text-gray-100 shadow-xl border-b border-gray-800">
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-5">
+    <header className="bg-white/80 backdrop-blur-xl border-b border-slate-200 sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
 
         {/* Logo */}
         <img
           src="/logo_a.png"
           alt="Journal Logo"
-          className="h-14 rounded-lg bg-[#0b1f17]"
+          className="h-12 rounded-lg"
         />
 
         {/* Mobile menu toggle */}
         <button
-          className="lg:hidden text-xl font-bold text-[#d4af37]"
+          className="lg:hidden text-2xl font-bold text-slate-800"
           onClick={() => setMenuOpen(!menuOpen)}
         >
           ☰
@@ -46,13 +46,18 @@ const Header = () => {
             <>
               <Link
                 to="/register"
-                className="px-5 py-2 rounded-full text-sm font-semibold bg-[#d4af37] text-[#0b1f17] hover:bg-[#c9a635] transition"
+                className="px-5 py-2 rounded-xl text-sm font-semibold
+                bg-gradient-to-r from-blue-500 to-blue-600 text-white
+                shadow-md hover:shadow-lg hover:-translate-y-0.5 transition"
               >
                 Register
               </Link>
+
               <Link
                 to="/login"
-                className="px-5 py-2 rounded-full text-sm font-semibold border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37] hover:text-[#0b1f17] transition"
+                className="px-5 py-2 rounded-xl text-sm font-semibold
+                border border-blue-500 text-blue-600
+                hover:bg-blue-50 transition"
               >
                 Login
               </Link>
@@ -60,7 +65,9 @@ const Header = () => {
           ) : (
             <button
               onClick={handleLogout}
-              className="px-5 py-2 rounded-full text-sm font-semibold bg-[#d4af37] text-[#0b1f17] hover:bg-[#c9a635] transition"
+              className="px-5 py-2 rounded-xl text-sm font-semibold
+              bg-gradient-to-r from-blue-500 to-blue-600 text-white
+              shadow-md hover:shadow-lg hover:-translate-y-0.5 transition"
             >
               Logout
             </button>
@@ -72,12 +79,12 @@ const Header = () => {
       <nav
         className={`${
           menuOpen ? "block" : "hidden"
-        } lg:flex items-center gap-8 px-6 pb-5 font-semibold text-sm`}
+        } lg:flex items-center gap-8 px-6 pb-4 font-medium text-sm text-slate-700`}
       >
         <Link
           to="/"
-          className={`hover:text-[#d4af37] transition ${
-            isActive("/") ? "text-[#d4af37]" : ""
+          className={`transition hover:text-blue-600 ${
+            isActive("/") ? "text-blue-600 font-semibold" : ""
           }`}
         >
           Home
@@ -85,8 +92,8 @@ const Header = () => {
 
         <Link
           to="/editorial-team"
-          className={`hover:text-[#d4af37] transition ${
-            isActive("/editorial-team") ? "text-[#d4af37]" : ""
+          className={`transition hover:text-blue-600 ${
+            isActive("/editorial-team") ? "text-blue-600 font-semibold" : ""
           }`}
         >
           Current
@@ -94,8 +101,8 @@ const Header = () => {
 
         <Link
           to="/archives"
-          className={`hover:text-[#d4af37] transition ${
-            isActive("/archives") ? "text-[#d4af37]" : ""
+          className={`transition hover:text-blue-600 ${
+            isActive("/archives") ? "text-blue-600 font-semibold" : ""
           }`}
         >
           Archives
@@ -103,8 +110,8 @@ const Header = () => {
 
         <Link
           to="/announcements"
-          className={`hover:text-[#d4af37] transition ${
-            isActive("/announcements") ? "text-[#d4af37]" : ""
+          className={`transition hover:text-blue-600 ${
+            isActive("/announcements") ? "text-blue-600 font-semibold" : ""
           }`}
         >
           Announcements
@@ -114,24 +121,27 @@ const Header = () => {
         <div className="relative">
           <button
             onClick={() => setAboutOpen(!aboutOpen)}
-            className={`hover:text-[#d4af37] transition ${
-              isAboutActive ? "text-[#d4af37]" : ""
+            className={`transition hover:text-blue-600 ${
+              isAboutActive ? "text-blue-600 font-semibold" : ""
             }`}
           >
             About ▾
           </button>
 
           {aboutOpen && (
-            <div className="absolute mt-3 w-56 rounded-xl bg-[#122d23] border border-gray-700 shadow-xl overflow-hidden z-50">
+            <div className="absolute mt-3 w-56 rounded-xl bg-white
+            border border-slate-200 shadow-xl overflow-hidden z-50">
               <Link
                 to="/about"
-                className="block px-4 py-3 text-sm text-gray-200 hover:bg-[#1f3a2e] transition"
+                className="block px-4 py-3 text-sm text-slate-700
+                hover:bg-slate-50 transition"
               >
                 About the Journal
               </Link>
               <Link
                 to="/submissions"
-                className="block px-4 py-3 text-sm text-gray-200 hover:bg-[#1f3a2e] transition"
+                className="block px-4 py-3 text-sm text-slate-700
+                hover:bg-slate-50 transition"
               >
                 Submissions
               </Link>
