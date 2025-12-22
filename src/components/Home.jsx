@@ -12,37 +12,31 @@ const Home = () => {
     <>
       <Header />
 
-      <main className="bg-slate-50">
+      {/* HERO */}
+      <section className="relative bg-slate-50 py-28">
+        <div className="absolute inset-0 bg-gradient-to-br from-indigo-100 to-cyan-100 opacity-70" />
+        <div className="relative max-w-6xl mx-auto text-center px-6">
+          <h1 className="text-6xl font-extrabold text-slate-900">
+            Applied Finance Insights
+          </h1>
+          <p className="mt-8 max-w-3xl mx-auto text-lg text-slate-600">
+            An independent platform for contemporary research, analysis,
+            and insights in finance and economics.
+          </p>
+        </div>
+      </section>
 
-        {/* HERO — FULL WIDTH */}
-        <section className="relative overflow-hidden bg-gradient-to-br from-blue-50 to-slate-100">
-          <div className="max-w-7xl mx-auto px-6 py-24 text-center">
-            <h1 className="text-5xl sm:text-6xl font-extrabold tracking-tight text-slate-900">
-              Applied Finance Insights
-            </h1>
-
-            <p className="mt-8 max-w-3xl mx-auto text-lg text-slate-600 leading-relaxed">
-              This journal is an independent academic platform created to support the dissemination of research and scholarly discussion in finance, economics, and related interdisciplinary areas.
-            </p>
-          </div>
-        </section>
-
-        {/* ACTION STRIP */}
-        <section className="-mt-16 relative z-10">
-          <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-xl p-6">
-            <Search onSearch={() => navigate("/current")} />
-          </div>
-        </section>
-
-        {/* CONTENT ZONE */}
-        <section className="max-w-7xl mx-auto px-6 py-20">
-          <div className="flex items-center justify-between mb-10">
+      {/* MAIN GRID */}
+      <section className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 lg:grid-cols-12 gap-12">
+        {/* LEFT */}
+        <main className="lg:col-span-8 space-y-10">
+          <div className="flex justify-between items-center">
             <h2 className="text-3xl font-bold text-slate-900">
               Current Issue
             </h2>
             <button
               onClick={() => navigate("/archives")}
-              className="text-sm font-semibold text-blue-600 hover:underline"
+              className="text-sm font-semibold text-indigo-600 hover:underline"
             >
               View Archives →
             </button>
@@ -51,9 +45,15 @@ const Home = () => {
           <div className="bg-white rounded-3xl shadow-2xl p-8">
             <CurrentIssue />
           </div>
-        </section>
+        </main>
 
-      </main>
+        {/* RIGHT FLOATING TOOLS */}
+        <aside className="lg:col-span-4 space-y-8">
+          <div className="bg-white/70 backdrop-blur-xl rounded-3xl shadow-xl p-6">
+            <Search onSearch={() => navigate("/current")} />
+          </div>
+        </aside>
+      </section>
 
       <Footer />
     </>
