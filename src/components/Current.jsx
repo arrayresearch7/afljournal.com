@@ -79,7 +79,7 @@ const Current = () => {
               Current Issue
             </h1>
             <p className="mt-3 text-sm text-indigo-600 font-medium">
-              Volume 14 · 2025 · Published May 21, 2025
+              Volume 14 · 2025 
             </p>
           </div>
 
