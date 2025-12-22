@@ -9,7 +9,7 @@ const Footer = () => {
             Applied Finance Insights
           </p>
           <p className="mt-2 text-sm text-slate-600">
-            Independent academic research platform providing open access to interdisciplinary scholarly work.
+            An independent open-access platform for interdisciplinary academic research.
           </p>
         </div>
 
