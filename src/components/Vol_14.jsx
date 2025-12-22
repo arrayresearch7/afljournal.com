@@ -6,6 +6,13 @@ import Search from "./Search";
 const articlesData = [
   {
     title: 
+      "Behavioural Biases in Retail Investing: Insights from Post-Pandemic Trading Patterns",
+    authors: "Dr. Paladugu Yadaiah, Dr. Putti Selvaraj",
+    pages: "42–51",
+    pdfUrl: "/vol-14/12.pdf",
+  },
+  {
+    title: 
       "Green Bonds and Climate Finance: Market Trends and Investor Behavior",
     authors: "Aadya Jakhmola",
     pages: "33–41",
