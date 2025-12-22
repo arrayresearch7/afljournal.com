@@ -68,10 +68,9 @@ const CurrentIssue = () => {
       {/* HEADER */}
       <div className="mb-12">
         <h1 className="text-4xl font-bold text-slate-900">
-          Vol. 14 (2025)
+          Current Issue
         </h1>
         <p className="mt-2 text-slate-600">
-          Published: 2025-05-21
         </p>
       </div>
 
