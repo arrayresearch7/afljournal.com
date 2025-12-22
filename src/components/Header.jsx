@@ -41,7 +41,7 @@ const Header = () => {
             <nav className="hidden lg:flex items-center gap-2 text-sm font-semibold text-slate-700">
               {[
                 ["/", "Home"],
-                ["/editorial-team", "Current"],
+                ["/current", "Current"],
                 ["/archives", "Archives"],
                 ["/announcements", "Announcements"],
                 ["/about", "About"],
