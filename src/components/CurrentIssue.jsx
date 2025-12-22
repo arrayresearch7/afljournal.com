@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
 
 const articles = [
   {
@@ -48,99 +46,59 @@ const articles = [
     pages: "33–41",
     pdfUrl: "/vol-14/11.pdf",
   },
-  {
-    title:
-      "Exploring the Evolution of FinTech and Technology Acceptance: Bibliometric Analysis of Research Trends and Future Gaps",
-    authors: "Dr. Rachna Jain, Dr. Shikha Sharma",
-    pages: "10–32",
-    pdfUrl: "/vol-14/10.pdf",
-  },
-  {
-    title:
-      "Agentic AI for Autonomous CI/CD: Towards Self-Adaptive Financial Infrastructure Pipelines",
-    authors: "1st Avinash Reddy Segireddy",
-    pages: "1–9",
-    pdfUrl: "/vol-14/9.pdf",
-  },
 ];
 
-const Current = () => {
+const CurrentIssue = () => {
   return (
-    <>
-      <Header />
+    <section className="max-w-7xl mx-auto px-6 py-16">
+      {/* HEADER */}
+      <div className="mb-12">
+        <h1 className="text-4xl font-bold text-slate-900">
+          Vol. 14 (2025)
+        </h1>
+        <p className="mt-2 text-slate-600">
+          Published: 2025-05-21
+        </p>
+      </div>
 
-      {/* DIFFERENT BACKGROUND */}
-      <main className="min-h-screen py-24 bg-gradient-to-br from-slate-100 via-white to-indigo-50">
-        <div className="max-w-7xl mx-auto px-6">
+      {/* GRID */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        {articles.map((article, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-3xl shadow-xl p-8
+            transition hover:-translate-y-1 hover:shadow-2xl"
+          >
+            <h2 className="text-lg font-bold text-slate-900 leading-snug">
+              {article.title}
+            </h2>
 
-          {/* HEADER STYLE DIFFERENT */}
-          <div className="mb-14">
-            <h1 className="text-5xl font-extrabold text-slate-900 tracking-tight">
-              Current Issue
-            </h1>
-            <p className="mt-3 text-sm text-indigo-600 font-medium">
-              Volume 14 · 2025 · Published May 21, 2025
+            <p className="mt-3 text-sm text-slate-600">
+              {article.authors}
             </p>
-          </div>
 
-          {/* GRID – SAME STRUCTURE, DIFFERENT CARD LOOK */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-            {articles.map((article, index) => (
-              <div
-                key={index}
-                className="relative bg-white rounded-3xl
-                border border-indigo-100
-                shadow-[0_10px_30px_rgba(99,102,241,0.12)]
-                hover:shadow-[0_20px_45px_rgba(99,102,241,0.25)]
-                transition-all duration-300
-                flex flex-col justify-between"
+            {/* FOOTER */}
+            <div className="mt-8 flex items-center justify-between">
+              <span className="text-sm text-slate-500">
+                Pages · {article.pages}
+              </span>
+
+              <a
+                href={article.pdfUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-5 py-2 rounded-full text-sm font-semibold text-white
+                bg-gradient-to-r from-indigo-500 to-cyan-500
+                shadow hover:shadow-lg"
               >
-                {/* TOP ACCENT BAR */}
-                <div className="h-1.5 w-full bg-gradient-to-r from-indigo-500 to-cyan-400 rounded-t-3xl" />
-
-                <div className="p-7 space-y-4">
-                  <a
-                    href={article.pdfUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-lg font-semibold text-slate-900
-                    hover:text-indigo-600 transition"
-                  >
-                    {article.title}
-                  </a>
-
-                  <p className="text-sm text-slate-600 leading-relaxed line-clamp-3">
-                    {article.authors}
-                  </p>
-                </div>
-
-                {/* FOOTER DIFFERENT BUTTON STYLE */}
-                <div className="px-7 py-5 border-t border-indigo-50
-                flex items-center justify-between">
-                  <span className="text-xs text-slate-500">
-                    Pages: {article.pages}
-                  </span>
-
-                  <a
-                    href={article.pdfUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 text-sm font-semibold rounded-full
-                    bg-indigo-600 text-white
-                    hover:bg-indigo-700 transition"
-                  >
-                    View PDF
-                  </a>
-                </div>
-              </div>
-            ))}
+                View PDF
+              </a>
+            </div>
           </div>
-        </div>
-      </main>
-
-      <Footer />
-    </>
+        ))}
+      </div>
+    </section>
   );
 };
 
-export default Current;
+export default CurrentIssue;
