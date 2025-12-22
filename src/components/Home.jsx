@@ -15,6 +15,8 @@ const Home = () => {
       {/* HERO SECTION */}
       <section className="relative overflow-hidden bg-gradient-to-br from-indigo-50 via-white to-cyan-50">
         <div className="max-w-7xl mx-auto px-6 py-28 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+          
+          {/* LEFT CONTENT */}
           <div>
             <h1 className="text-5xl sm:text-6xl font-extrabold text-slate-900">
               Applied Finance Insights
@@ -44,14 +46,24 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Right visual */}
+          {/* RIGHT VISUAL – PREMIUM TEXT */}
           <div className="hidden lg:block">
-            <div className="rounded-3xl bg-white shadow-2xl p-10">
-              <p className="text-sm text-slate-500">
-                Structured research · Transparent access · Independent platform
+            <div className="rounded-3xl bg-white shadow-2xl p-10 space-y-4">
+              <h3 className="text-lg font-semibold text-slate-900">
+                A Trusted Academic Space
+              </h3>
+
+              <p className="text-sm text-slate-600 leading-relaxed">
+                Curated, peer-reviewed research with a focus on quality,
+                transparency, and long-term academic value.
               </p>
+
+              <div className="pt-3 border-t border-slate-200 text-xs font-medium text-indigo-600">
+                Structured Research · Open Access · Independent Platform
+              </div>
             </div>
           </div>
+
         </div>
       </section>
 
