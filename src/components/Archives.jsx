@@ -5,10 +5,10 @@ import Footer from "./Footer";
 
 const Archives = () => {
   const volumes = [
-    { id: "vol_14", title: "Volume 14 · 2025", published: "Feb 02, 2025" },
-    { id: "vol_13", title: "Volume 13 · 2024", published: "May 31, 2024" },
-    { id: "vol_12", title: "Volume 12 · 2023", published: "Jul 14, 2023" },
-    { id: "vol_11", title: "Volume 11 · 2022", published: "Mar 05, 2022" },
+    { id: "vol_14", title: "Volume 14 · 2025", published: "Dec 16, 2025" },
+    { id: "vol_13", title: "Volume 13 · 2024", published: "May 14, 2024" },
+    { id: "vol_12", title: "Volume 12 · 2023", published: "Jul 18, 2023" },
+    { id: "vol_11", title: "Volume 11 · 2022", published: "Mar 09, 2022" },
   ];
 
   return (
