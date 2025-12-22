@@ -65,14 +65,14 @@ const articlesData = [
       "Sustainable Housing And Social Equity In Rapidly Urbanizing Regions",
     authors:
       "Dr. Franklin John Selvaraj, Dr. Rishi, Dr. Sunanda I. Kittali, Dr. Saurabh Chandra, Sreedevi, Akansh Garg",
-    pages: "11",
+  
     pdfUrl: "/Env/1.pdf",
   },
   {
     title:
       "Hooked on Hearts: The Role of Social Media Validation in Behavioral Addiction",
     authors: "Payal Jain, Tehseen Saleem",
-    pages: "8",
+    
     pdfUrl: "/vol-14/1.pdf",
   },
   {
@@ -80,7 +80,7 @@ const articlesData = [
       "A Study On The Effects Of Social Pressure And Personal Control On E-Commerce Adoption",
     authors:
       "Ms. Shakti Shukla, Deepti Mehlawat, Dr. Anita Singh, Dr. Anubha Vashisht, Dr. Uma",
-    pages: "10",
+    
     pdfUrl: "/vol-14/2.pdf",
   },
   {
@@ -88,7 +88,7 @@ const articlesData = [
       "A Prospective Comparative Study Of Proximal Femoral Nailing And Bipolar Hemiarthroplasty In Comminuted Intertrochanteric Fractures",
     authors:
       "Dr. Chethan Gowda M, Dr. Mahesh D V, Dr. Rajeevratna Suresh Naik, Dr. Vineeth K S",
-    pages: "7",
+    
     pdfUrl: "/vol-14/3.pdf",
   },
   {
@@ -96,14 +96,14 @@ const articlesData = [
       "Progressive Bilateral Visual Loss Due To Vincristine Induced Optic Neuropathy",
     authors:
       "Dr. Nila C A, Dr. Latha M Sneha, Dr. Roja Raj, Mr. Selvaseelan",
-    pages: "6",
+    
     pdfUrl: "/Env/2.pdf",
   },
   {
     title:
       "A Study On Work Life Balance Of Women School Teachers Working In Private Schools In Chennai",
     authors: "Dr. R. Rethina Bai, Mrs. K. Hemalatha",
-    pages: "10",
+    
     pdfUrl: "/vol-14/7.pdf",
   },
   {
@@ -111,7 +111,7 @@ const articlesData = [
       "An Observational Study on the Therapeutic Application of Raktamokshana by Ayurvedic Practitioners in Pune City",
     authors:
       "Dr. Shrutee Diliprao Lad, Dr. Madhuri P. Bhide, Dr. Swapnil J. Biradar Patil",
-    pages: "6",
+    
     pdfUrl: "/vol-14/5.pdf",
   },
 ];
