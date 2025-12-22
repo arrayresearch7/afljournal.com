@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+/* global anchor cleanup */
 @layer utilities {
-  .site-nav a { text-decoration: none; }
+  .site-nav a {
+    text-decoration: none;
+    color: #0f172a;
+    font-weight: 500;
+    transition: color 200ms ease;
+  }
+
+  .site-nav a:hover {
+    color: #4f7cff;
+  }
+}
+
+/* body base for consistency */
+body {
+  background-color: #f6f8fc;
+  color: #334155;
 }
