@@ -31,13 +31,11 @@ const Home = () => {
             rounded-full blur-3xl" />
 
             <h1 className="relative text-5xl sm:text-6xl font-extrabold text-slate-900">
-              Applied Finance Insights
+              Applied Finance Letters Insight
             </h1>
 
             <p className="relative mt-6 text-lg text-slate-600 max-w-xl">
-              An independent research platform showcasing peer-reviewed and
-              interdisciplinary scholarly work across finance, economics,
-              technology, and policy.
+              Applied Finance Letters Insight is an independent, open-access academic journal dedicated to the dissemination of high-quality scholarly research in finance and closely related interdisciplinary areas.
             </p>
 
             <div className="relative mt-10 flex gap-4">
