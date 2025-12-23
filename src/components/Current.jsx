@@ -5,6 +5,14 @@ import Footer from "./Footer";
 const articles = [
   {
     title:
+      "The Impact of Central Bank Digital Currencies (CBDCs) on Monetary Policy and Financial Stability",
+    authors:
+      "ANILKUMAR KR, Mr. Kishorsinh Chauhan, Sneha Singireddy, Shrikanta Ganapati Naik",
+    pages: "88–95",
+    pdfUrl: "/vol-14/17.pdf",
+  },
+  {
+    title:
       "FinTech and Financial Inclusion: Empirical Evidence from Emerging Markets",
     authors:
       "Dr. Islam LEBCIR, CS Ankit Shah, Appa Rao Nagubandi, Dr. Satish Manikrao Dhoke, Dr. Gurmeet Singh Sikh, Prof Manoj Kumar Mishra",
