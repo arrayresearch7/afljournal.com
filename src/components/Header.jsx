@@ -57,7 +57,7 @@ const Header = () => {
                   className="h-9 drop-shadow-md"
                 />
                 <span className="text-white font-bold tracking-wide">
-                  Applied Finance Letters Insight
+                  Applied-Finance Letters Insight
                 </span>
               </Link>
 
