@@ -35,7 +35,7 @@ const Home = () => {
             </h1>
 
             <p className="relative mt-6 text-lg text-slate-600 max-w-xl">
-              Applied Finance Letters Insight is an independent, open-access academic journal dedicated to the dissemination of high-quality scholarly research in finance and closely related interdisciplinary areas.
+              Applied-Finance Letters Insight is an independent, open-access academic journal dedicated to the dissemination of high-quality scholarly research in finance and closely related interdisciplinary areas.
             </p>
 
             <div className="relative mt-10 flex gap-4">
