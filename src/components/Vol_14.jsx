@@ -5,6 +5,14 @@ import Search from "./Search";
 
 const articlesData = [
   {
+     title:
+      "Corporate Governance and Financial Performance: Evidence from Multinational Firms",
+    authors:
+      "Dr Islam LEBCIR, Dr.T.Rani, Dr. Shabbirali S. Thavara",
+    pages: "96–104",
+    pdfUrl: "/vol-14/18.pdf",
+  },
+  {
     title:
       "The Impact of Central Bank Digital Currencies (CBDCs) on Monetary Policy and Financial Stability",
     authors:
