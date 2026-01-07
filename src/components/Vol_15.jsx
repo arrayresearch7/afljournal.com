@@ -41,10 +41,10 @@ const Vol_15 = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-indigo-100 to-cyan-100 opacity-70" />
         <div className="relative max-w-6xl mx-auto text-center px-6">
           <h1 className="text-5xl font-extrabold text-slate-900">
-            Volume 14 · 2025
+            Volume 15 · 2026
           </h1>
           <p className="mt-4 text-slate-600">
-            Published on December 23, 2025
+            Published on January 07, 2026
           </p>
         </div>
       </section>
@@ -112,4 +112,4 @@ const Vol_15 = () => {
   );
 };
 
-export default Vol_14;
+export default Vol_15;
