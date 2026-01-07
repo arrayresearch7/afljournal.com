@@ -5,6 +5,7 @@ import Footer from "./Footer";
 
 const Archives = () => {
   const volumes = [
+    { id: "vol_15", title: "Volume 15 · 2026", published: "Jan 07, 2026" },
     { id: "vol_14", title: "Volume 14 · 2025", published: "Dec 16, 2025" },
     { id: "vol_13", title: "Volume 13 · 2024", published: "May 14, 2024" },
     { id: "vol_12", title: "Volume 12 · 2023", published: "Jul 18, 2023" },
