@@ -4,6 +4,22 @@ import Footer from "./Footer";
 
 const articles = [
   {
+    title:
+      "Digital Training Programs and Their Influence on Employee Productivity in the Technology Sector",
+    authors:
+      "MR.RANABIR GHOSHY, DR. BYJU JOHN",
+    pages: "112–119",
+    pdfUrl: "/vol-14/20.pdf",
+  },
+  {
+    title:
+      "Effect of Social Media, Influencer Marketing, and Digital Technologies on Cosmetic Buying Behaviour",
+    authors:
+      "MR. SUBHASIS BANDYOPADHYAY, DR. BYJU JOHN",
+    pages: "105–111",
+    pdfUrl: "/vol-14/19.pdf",
+  },
+  {
      title:
       "Corporate Governance and Financial Performance: Evidence from Multinational Firms",
     authors:
