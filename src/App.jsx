@@ -15,6 +15,11 @@ import Vol_14 from "./components/Vol_14";
 import Vol_11 from "./components/Vol_11";
 import ArticleDetail from "./components/ArticleDetail";
 
+/* 🔹 NEW IMPORTS (ADDED ONLY) */
+import Current_Issue_1_2026 from "./components/Current_Issue_1_2026";
+import Special_Issue_1_2026 from "./components/Special_Issue_1_2026";
+import Vol_15 from "./components/Vol_15";
+
 function App() {
   return (
     <div className="relative min-h-screen overflow-hidden">
@@ -42,16 +47,33 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+
+          {/* EXISTING */}
           <Route path="/current" element={<Current />} />
           <Route path="/archives" element={<Archives />} />
           <Route path="/announcements" element={<Announce />} />
           <Route path="/about" element={<About />} />
           <Route path="/submissions" element={<Submissions />} />
           <Route path="/contact" element={<Contact />} />
+
+          {/* VOLUMES */}
           <Route path="/vol_12" element={<Vol_12 />} />
           <Route path="/vol_13" element={<Vol_13 />} />
           <Route path="/vol_14" element={<Vol_14 />} />
           <Route path="/vol_11" element={<Vol_11 />} />
+          <Route path="/vol_15" element={<Vol_15 />} />
+
+          {/* 🔹 NEW ISSUES 2026 */}
+          <Route
+            path="/current-issue-1-2026"
+            element={<Current_Issue_1_2026 />}
+          />
+          <Route
+            path="/special-issue-1-2026"
+            element={<Special_Issue_1_2026 />}
+          />
+
+          {/* ARTICLE DETAIL */}
           <Route path="/article/:volume/:index" element={<ArticleDetail />} />
         </Routes>
       </div>
