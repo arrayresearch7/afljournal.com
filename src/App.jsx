@@ -2,7 +2,6 @@ import "./App.css";
 import About from "./components/About";
 import Announce from "./components/Announce";
 import Archives from "./components/Archives";
-import Current from "./components/Current";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Register from "./components/Register";
