@@ -9,7 +9,7 @@ const articles = [
     authors:
       "MR.RANABIR GHOSHY, DR. BYJU JOHN",
     pages: "112–119",
-    pdfUrl: "/vol-14/20.pdf",
+    pdfUrl: "/vol-15/2.pdf",
   },
   {
     title:
@@ -17,86 +17,11 @@ const articles = [
     authors:
       "MR. SUBHASIS BANDYOPADHYAY, DR. BYJU JOHN",
     pages: "105–111",
-    pdfUrl: "/vol-14/19.pdf",
-  },
-  {
-     title:
-      "Corporate Governance and Financial Performance: Evidence from Multinational Firms",
-    authors:
-      "Dr Islam LEBCIR, Dr.T.Rani, Dr. Shabbirali S. Thavara",
-    pages: "96–104",
-    pdfUrl: "/vol-14/18.pdf",
-  },
-  {
-    title:
-      "The Impact of Central Bank Digital Currencies (CBDCs) on Monetary Policy and Financial Stability",
-    authors:
-      "ANILKUMAR KR, Mr. Kishorsinh Chauhan, Sneha Singireddy, Shrikanta Ganapati Naik",
-    pages: "88–95",
-    pdfUrl: "/vol-14/17.pdf",
-  },
-  {
-    title:
-      "FinTech and Financial Inclusion: Empirical Evidence from Emerging Markets",
-    authors:
-      "Dr. Islam LEBCIR, CS Ankit Shah, Appa Rao Nagubandi, Dr. Satish Manikrao Dhoke, Dr. Gurmeet Singh Sikh, Prof Manoj Kumar Mishra",
-    pages: "81–87",
-    pdfUrl: "/vol-14/16.pdf",
-  },
-  {
-    title:
-      "Cryptocurrency Market Spillovers: Risk Contagion Across Global Financial Systems",
-    authors:
-      "Dr. Hardeep Singh, Dr. Debanjalee Bose, Appa Rao Nagubandi, S. Prabhu, Shrikanta Ganapati Naik",
-    pages: "70–80",
-    pdfUrl: "/vol-14/15.pdf",
-  },
-  {
-    title:
-      "ESG Investments and Firm Value: A Global Comparative Study",
-    authors: "Dhiraj Sharma, Sumit Kushwaha, Ashish Gupta, Dr. Poonam",
-    pages: "60–69",
-    pdfUrl: "/vol-14/14.pdf",
-  },
-  {
-    title:
-      "Investor Behavior and Market Trends in the Global Green Bond and Climate Finance Landscape",
-    authors:
-      "Dr. R. Krishna Vardhan Reddy, Dr. B. Anjan Kumar, Dr. K. Kiran Kumar, Dr. S. Sreekanth",
-    pages: "52–59",
-    pdfUrl: "/vol-14/13.pdf",
-  },
-  {
-    title:
-      "Behavioural Biases in Retail Investing: Insights from Post-Pandemic Trading Patterns",
-    authors: "Dr. Paladugu Yadaiah, Dr. Putti Selvaraj",
-    pages: "42–51",
-    pdfUrl: "/vol-14/12.pdf",
-  },
-  {
-    title:
-      "Green Bonds and Climate Finance: Market Trends and Investor Behavior",
-    authors: "Aadya Jakhmola",
-    pages: "33–41",
-    pdfUrl: "/vol-14/11.pdf",
-  },
-  {
-    title:
-      "Exploring the Evolution of FinTech and Technology Acceptance: Bibliometric Analysis of Research Trends and Future Gaps",
-    authors: "Dr. Rachna Jain, Dr. Shikha Sharma",
-    pages: "10–32",
-    pdfUrl: "/vol-14/10.pdf",
-  },
-  {
-    title:
-      "Agentic AI for Autonomous CI/CD: Towards Self-Adaptive Financial Infrastructure Pipelines",
-    authors: "Avinash Reddy Segireddy",
-    pages: "1–9",
-    pdfUrl: "/vol-14/9.pdf",
+    pdfUrl: "/vol-15/1.pdf",
   },
 ];
 
-const Current = () => {
+const SpecialIssue12026 = () => {
   return (
     <>
       <Header />
@@ -108,10 +33,10 @@ const Current = () => {
           {/* HEADER STYLE DIFFERENT */}
           <div className="mb-14">
             <h1 className="text-5xl font-extrabold text-slate-900 tracking-tight">
-              Current Issue
+              Special Issue 1 2026
             </h1>
             <p className="mt-3 text-sm text-indigo-600 font-medium">
-              Volume 14 · 2025 
+              Volume 15 · 2026 
             </p>
           </div>
 
@@ -175,4 +100,4 @@ const Current = () => {
   );
 };
 
-export default Current;
+export default Special Issue 1 2026;
