@@ -2,33 +2,38 @@ import "./App.css";
 import About from "./components/About";
 import Announce from "./components/Announce";
 import Archives from "./components/Archives";
+import Current from "./components/SpecialIssue12026";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import Register from "./components/Register";
 import Submissions from "./components/Submissions";
 import Contact from "./components/Contact";
 import { Routes, Route } from "react-router-dom";
-import Vol_11 from "./components/Vol_11";
 import Vol_12 from "./components/Vol_12";
 import Vol_13 from "./components/Vol_13";
 import Vol_14 from "./components/Vol_14";
+import Vol_11 from "./components/Vol_11";
 import Vol_15 from "./components/Vol_15";
 import ArticleDetail from "./components/ArticleDetail";
-
-/* 🔹 2026 FILES (RENAMED BY YOU) */
-import Current_Issue_1_2026 from "./components/Current_Issue_1_2026";
-import Special_Issue_1_2026 from "./components/Special_Issue_1_2026";
 
 function App() {
   return (
     <div className="relative min-h-screen overflow-hidden">
 
       {/* 🔹 GLOBAL WATERMARK LOGO */}
-      <div className="fixed inset-0 pointer-events-none z-0 flex items-center justify-center">
+      <div
+        className="fixed inset-0 pointer-events-none z-0
+        flex items-center justify-center"
+      >
         <img
           src="/logo_a.png"
           alt="Background Logo"
-          className="w-[680px] max-w-[85%] opacity-[0.12] blur-[0.5px] select-none"
+          className="
+            w-[680px] max-w-[85%]
+            opacity-[0.12]
+            blur-[0.5px]
+            select-none
+          "
         />
       </div>
 
@@ -38,33 +43,17 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-
-          {/* EXISTING */}
-          <Route path="/current" element={<Current />} />
+          <Route path="/specialissue12026" element={<SpecialIssue12026 />} />
           <Route path="/archives" element={<Archives />} />
           <Route path="/announcements" element={<Announce />} />
           <Route path="/about" element={<About />} />
           <Route path="/submissions" element={<Submissions />} />
           <Route path="/contact" element={<Contact />} />
-
-          {/* VOLUMES */}
-          <Route path="/vol_11" element={<Vol_11 />} />
           <Route path="/vol_12" element={<Vol_12 />} />
           <Route path="/vol_13" element={<Vol_13 />} />
           <Route path="/vol_14" element={<Vol_14 />} />
+          <Route path="/vol_11" element={<Vol_11 />} />
           <Route path="/vol_15" element={<Vol_15 />} />
-
-          {/* 🔹 2026 ISSUES */}
-          <Route
-            path="/current-issue-1-2026"
-            element={<Current_Issue_1_2026 />}
-          />
-          <Route
-            path="/special-issue-1-2026"
-            element={<Special_Issue_1_2026 />}
-          />
-
-          {/* ARTICLE DETAIL */}
           <Route path="/article/:volume/:index" element={<ArticleDetail />} />
         </Routes>
       </div>
