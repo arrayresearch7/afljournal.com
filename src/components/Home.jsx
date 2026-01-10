@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import CurrentIssue from "./CurrentIssue";
+import Current_Issue_1_2026 from "./Current_Issue_1_2026";
 import Footer from "./Footer";
 import { useNavigate } from "react-router-dom";
 import Search from "./Search";
