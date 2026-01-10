@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import Current_Issue_1_2026 from "./Current_Issue_1_2026";
+import CurrentIssue12026 from "./CurrentIssue12026";
 import Footer from "./Footer";
 import { useNavigate } from "react-router-dom";
 import Search from "./Search";
@@ -144,7 +144,7 @@ const Home = () => {
 
       {/* CURRENT ISSUE */}
       <section className="max-w-7xl mx-auto px-6 pb-24">
-        <CurrentIssue />
+        <CurrentIssue12026 />
       </section>
 
       <Footer />
