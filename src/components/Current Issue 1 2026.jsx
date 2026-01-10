@@ -19,13 +19,13 @@ const articles = [
   },
 ];
 
-const SpecialIssue12026 = () => {
+const CurrentIssue12026 = () => {
   return (
     <section className="max-w-7xl mx-auto px-6 py-16">
       {/* HEADER */}
       <div className="mb-12">
         <h1 className="text-4xl font-bold text-slate-900">
-          Special Issue 1 2026
+          Current Issue 1 2026
         </h1>
         <p className="mt-2 text-slate-600">
         </p>
@@ -71,4 +71,4 @@ const SpecialIssue12026 = () => {
   );
 };
 
-export default SpecialIssue12026;
+export default CurrentIssue12026;
