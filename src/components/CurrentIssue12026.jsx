@@ -19,7 +19,7 @@ const articles = [
   },
 ];
 
-const Current_Issue_1_2026 = () => {
+const CurrentIssue12026 = () => {
   return (
     <section className="max-w-7xl mx-auto px-6 py-16">
       {/* HEADER */}
@@ -71,4 +71,4 @@ const Current_Issue_1_2026 = () => {
   );
 };
 
-export default Current_Issue_1_2026;
+export default CurrentIssue12026;
