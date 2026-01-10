@@ -21,7 +21,7 @@ const articles = [
   },
 ];
 
-const Special_Issue_1_2026 = () => {
+const SpecialIssue12026 = () => {
   return (
     <>
       <Header />
@@ -100,4 +100,4 @@ const Special_Issue_1_2026 = () => {
   );
 };
 
-export default Special_Issue_1_2026;
+export default SpecialIssue12026;
